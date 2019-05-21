@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Calculadora - javascript</title>
+    <script type="text/javascript" src="js/funciones.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+</head>
+
+<body>
+    <h1>CALCULADORA CON JAVASCRIPT</h1>
+    <form>
+        <input type="text" id="pantalla" name="pantallaTexto" disabled>
+    </form>
+    <table>
+        <tr>
+            <td><input class="button" type="button" value="%" onclick="porcentaje(pantalla.value)"></td>
+            <td><input class="button" type="button" value="&#8730;" onclick="raiz(pantalla.value)"></td>
+            <td><input class="button" type="button" value="x²" onclick="potencia(pantalla.value)"></td>
+            <td><input class="button" type="button" value="1/x" onclick="pantalla.value+='1/'"></td>
+        </tr>
+        <tr>
+            <td><input class="button" type="button" value="CE" onclick="pantalla.value=''"></td>
+            <td><input class="button" type="button" value="C" onclick="pantalla.value=''"></td>
+            <td><input class="button" type="button" value="⌫" onclick="regresar(pantalla.value)"></td>
+            <td><input class="button" type="button" value="&divide;" onclick="pantalla.value+='/'"></td>
+        </tr>
+        <tr>
+            <td><input class="button numero" type="button" value="7" onclick="pantalla.value+='7'"></td>
+            <td><input class="button numero" type="button" value="8" onclick="pantalla.value+='8'"></td>
+            <td><input class="button numero" type="button" value="9" onclick="pantalla.value+='9'"></td>
+            <td><input class="button" type="button" value="&times;" onclick="pantalla.value+='*'"></td>
+        </tr>
+        <tr>
+            <td><input class="button numero" type="button" value="4" onclick="pantalla.value+='4'"></td>
+            <td><input class="button numero" type="button" value="5" onclick="pantalla.value+='5'"></td>
+            <td><input class="button numero" type="button" value="6" onclick="pantalla.value+='6'"></td>
+            <td><input class="button" type="button" value="-" onclick="pantalla.value+='-'"></td>
+        </tr>
+        <tr>
+            <td><input class="button numero" type="button" value="1" onclick="pantalla.value+='1'"></td>
+            <td><input class="button numero" type="button" value="2" onclick="pantalla.value+='2'"></td>
+            <td><input class="button numero" type="button" value="3" onclick="pantalla.value+='3'"></td>
+            <td><input class="button" type="button" value="+" onclick="pantalla.value+='+'"></td>
+        </tr>
+        <tr>
+            <td><input class="button" type="button" value="&plusmn;" onclick="pantalla.value+='-'"></td>
+            <td><input class="button numero" type="button" value="0" onclick="pantalla.value+='0'"></td>
+            <td><input class="button" type="button" value="." onclick="pantalla.value+='.'"></td>
+            <td><input class="button" type="button" value="=" onclick="operar(pantalla.value)"></td>
+        </tr>
+
+    </table>
+</body>
+
+</html>
