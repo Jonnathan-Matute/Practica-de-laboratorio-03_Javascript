@@ -13,7 +13,7 @@
 
     <section>
         <div id="form">
-            <h1>Formulario</h1>
+            <h1>Formulario - Validaciones</h1>
             <form method="POST" action="php/index.php" onsubmit="return validar()">
                 <table>
                     <tr>
@@ -52,8 +52,8 @@
                     </tr>
 
                     <tr>
-                        <td><label>Fecha de Nacimiento</label></td>
-                        <td><input type="text" id="fec" name="fec" placeholder="dd/mm/yyyy" onfocus="escribe(this)">
+                        <td><label>Fecha de Nacimiento: </label></td>
+                        <td><input type="text" id="fec" name="fec" placeholder="Formato dd/mm/yyyy" onfocus="escribe(this)">
                         </td>
                         <td>
                             <spam id="f" style="display: none;">*error</spam>
@@ -61,8 +61,8 @@
                     </tr>
 
                     <tr>
-                        <td><label>Email</label></td>
-                        <td><input type="text" id="ema" name="ema" placeholder="ingresa tu email"
+                        <td><label>Correo: </label></td>
+                        <td><input type="text" id="ema" name="ema" placeholder="Ingresa tu email"
                                 onfocus="escribe(this)"></td>
                         <td>
                             <spam id="e" style="display: none;">*error</spam>
